@@ -28,6 +28,20 @@
         display: none;
     }
 
+    h3 {
+        text-align: center;
+    }
+
+    .main {
+        width: calc(100vw - 6rem);
+        z-index: 20;
+    }
+
+    .devider {
+        margin-left: 0rem !important;
+        width: 100% !important;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -49,5 +63,11 @@
     .mainSection {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .main {
+        width: 100vw;
+        z-index: 20;
+    }
+
 
 }

@@ -1,5 +1,71 @@
 .icon-main {
     font-size: 2.2rem;
     text-align: center;
-    
+    cursor: pointer;
+}
+
+.btn__big {
+    width: 15rem;
+    height: 3.6rem;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 30rem;
+    cursor: pointer;
+    background-color: $accent;
+    color: $txt-different;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: $transition-015;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.menu__button {
+    @include flex-row-center-center;
+
+    width: 3.6rem;
+    height: 3rem;
+    background-color: $accent;
+    border-radius: 30rem 0 0 30rem;
+    transition: $transition-015;
+    color: $txt-different;
+
+    &:hover {
+        background-color: $hover;
+        cursor: pointer;
+    }
+
+}
+
+.switcher {
+    @include flex-row-center-center;
+
+    position: relative;
+    min-width: 3.6rem;
+    height: 2.4rem;
+    background-color: $main;
+    border-radius: 10rem;
+    margin: 0 2.2rem;
+    border: $border;
+
+    &__slider {
+        position: absolute;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 10rem;
+        transform: translateX(.5rem);
+        background: $accent;
+        transition: $transition-015;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    // .slider-move {
+    //     transform: translateX(-.5rem);
+    // }
 }

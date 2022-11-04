@@ -52,3 +52,20 @@ span {
 .mr-2 {
   margin-right: 2rem;
 }
+
+.container {
+  display: flex;
+  width: 100vw;
+}
+
+.main {
+  width: calc(100vw - 26rem);
+  z-index: 20;
+  transition: $transition-015;
+}
+
+.page-background {
+  background-color: $second;
+  min-height: calc(100vh - 6rem);
+  padding: 2rem;
+}

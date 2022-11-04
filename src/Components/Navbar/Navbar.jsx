@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div className="aside__menu-top-left">
 
                 </div>
-                <div className="aside__menu-top-right" id="menuSwitch">
+                <div className="menu__button" id="menuSwitch">
                     <BiArrowFromRight className="icon-main" />
                 </div>
             </div>

@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header id="header" className="header">
         <div className="header__left">
-            <span ><BiMenu className="icon-main "/></span>
-            <span ><BiX className="icon-main "/></span>
+            <span ><BiMenu className="icon-main hamburger"/></span>
+            <span ><BiX className="icon-main close-menu"/></span>
             <img className="logoMobile" src="" alt="" />
             <img className="logoDesktop" src="" alt="" /> 
         </div>

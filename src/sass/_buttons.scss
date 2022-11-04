@@ -25,6 +25,10 @@
 .menu__button {
     @include flex-row-center-center;
 
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    
     width: 3.6rem;
     height: 3rem;
     background-color: $accent;

@@ -42,6 +42,14 @@
         width: 100% !important;
     }
 
+    .close-menu {
+        display: block !important;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+
 }
 
 @media screen and (max-width:768px) {

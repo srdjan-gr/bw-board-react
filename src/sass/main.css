@@ -112,6 +112,9 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
   width: 3.6rem;
   height: 3rem;
   background-color: #645fc6;
@@ -181,6 +184,12 @@ h4 {
     margin-left: 0rem !important;
     width: 100% !important;
   }
+  .close-menu {
+    display: block !important;
+  }
+  .hamburger {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .mainSection {
@@ -204,6 +213,7 @@ h4 {
   transition: all 0.3s ease-in-out;
   background-color: #2c2c38;
   border-right: 1px solid #3b3b3b;
+  position: relative;
 }
 .aside__menu-top {
   height: 8rem;
@@ -343,4 +353,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   width: 20rem;
+}
+.header .close-menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

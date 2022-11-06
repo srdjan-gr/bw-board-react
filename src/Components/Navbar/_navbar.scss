@@ -8,9 +8,7 @@
     &-top {
         height: 8rem;
         background-color: $main;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-row-center-center;
     }
 }
 
@@ -37,7 +35,7 @@
                 @include margin(2rem, 0rem);
 
                 &:last-child {
-                    margin-left: 0rem !important;
+                    margin-left: .5rem !important;
                 }
             }
         }
@@ -49,11 +47,7 @@
 
 
             & span {
-                @include margin(2rem, 0rem)
-            }
-
-            &:hover {
-                cursor: pointer;
+                @include margin(1.9rem, 0rem)
             }
         }
 
@@ -84,24 +78,21 @@
         overflow-y: scroll;
         overflow-x: hidden;
 
-
-
         .h3TextOff {
             transform: translateX(-14.2rem);
             transition: $transition-03;
         }
 
-
         & li {
             margin: .5rem 0;
-            width: 24rem;
+            width: 23rem;
             height: 4rem;
             border-radius: 0 30rem 30rem 0;
             color: $txt-different;
             transition: $transition-015;
 
             & span {
-                @include margin(2rem, 0rem)
+                @include margin(1.9rem, 0rem)
             }
 
             &:hover {
@@ -127,7 +118,7 @@
         @include flex-row-center-center;
 
         width: 100%;
-        height: 5.4rem;
+        height: 5rem;
         background-color: $second;
         position: absolute;
         bottom: 0;
@@ -136,7 +127,17 @@
     }
 }
 
-// .closeAsideMenu {
-//     min-width: 6rem !important;
-//     transition: $transition-03;
-// }
+// Classes for closing aside menu
+.closeAside {
+    width: 6rem !important;
+    transition: $transition-03;
+}
+
+.spanText {
+    display: none;
+}
+
+.closedDevider {
+    margin-left: 0rem !important;
+    width: 100% !important;
+}

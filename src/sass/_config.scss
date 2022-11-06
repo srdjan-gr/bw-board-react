@@ -41,6 +41,10 @@ span {
   margin-left: 1rem;
 }
 
+.mr-05 {
+  margin-right: .5rem;
+}
+
 .mr-1 {
   margin-right: 1rem;
 }
@@ -59,13 +63,13 @@ span {
 }
 
 .main {
-  width: calc(100vw - 26rem);
+  width: 100%;
   z-index: 20;
   transition: $transition-015;
 }
 
 .page-background {
   background-color: $second;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 5rem);
   padding: 2rem;
 }

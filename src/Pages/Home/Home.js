@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className='page-background'>
 
-            <h1>Home strana </h1>
+            <h1>Home</h1>
         </div>
     )
 }

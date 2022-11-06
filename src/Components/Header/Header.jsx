@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiX, BiMenu, BiDotsVerticalRounded } from 'react-icons/bi'
+import { BiX, BiMenu, BiDotsVerticalRounded, BiPlusCircle } from 'react-icons/bi'
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         
         <div className="header__right" >
-            <button className="btn__big ">+ Add New Task</button> 
+            <button className="btn__big "><BiPlusCircle className="icon-main mr-05"/> Add New Task</button> 
             <span><BiDotsVerticalRounded className="icon-main "/></span>
         </div>
     </header>

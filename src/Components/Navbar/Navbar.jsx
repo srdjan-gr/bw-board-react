@@ -1,16 +1,29 @@
-import React from 'react'
-import { BiMoon, BiSun, BiArrowFromRight, BiArrowFromLeft, BiCircle, BiPlusCircle, BiDetail } from 'react-icons/bi'
+import React, { useState } from 'react'
+import { BiMoon, BiSun, BiArrowFromRight, BiPlusCircle, BiDetail } from 'react-icons/bi'
 
 const Navbar = () => {
+
+    const [asideMenu, setAsideMenu] = useState(false);
+    const [iconRotate, setIconRotate] = useState(false);
+    const [spanText, setSpanText] = useState(false);
+    const [devider, setDevider] = useState(false);
+
+    const clickHandler = () => {
+        setAsideMenu(!asideMenu)
+        setIconRotate(!iconRotate)
+        setSpanText(!spanText)
+        setDevider(!devider)
+    }
+
     return (
 
-        <aside className="aside__menu ">
+        <aside className={`${asideMenu ? 'closeAside' : ''} aside__menu`}>
             <div className="aside__menu-top" id="asideTop">
                 <div className="aside__menu-top-left">
 
                 </div>
-                <div className="menu__button" id="menuSwitch">
-                    <BiArrowFromRight className="icon-main" />
+                <div className="menu__button" id="menuSwitch" onClick={clickHandler}>
+                    <BiArrowFromRight className={`${iconRotate ? 'iconRotate' : ''} icon-main`} />
                 </div>
             </div>
 
@@ -18,7 +31,7 @@ const Navbar = () => {
 
                 <div className="aside__bottom-heading ">
                     <div className="aside__bottom-heading-info ">
-                        <h3 className='mobile-span-text'>All Boards</h3>
+                        <h3 className={`${spanText ? 'spanText' : ''} mobile-span-text`}>All Boards</h3>
                         <h3>( 8 )</h3>
                     </div>
 
@@ -34,7 +47,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="devider"></div>
+                <div className={`${devider ? 'closedDevider' : ''} devider`}></div>
 
                 <div className="aside__bottom-menu">
 

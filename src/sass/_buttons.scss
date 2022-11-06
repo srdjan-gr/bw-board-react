@@ -16,6 +16,7 @@
     font-size: 1.4rem;
     font-weight: bold;
     transition: $transition-015;
+    @include flex-row-center-center;
 
     &:hover {
         background-color: $hover;
@@ -27,9 +28,8 @@
 
     position: absolute;
     right: 0;
-    top: 1.5rem;
-    
-    width: 3.6rem;
+    top: 1rem;
+    width: 3rem;
     height: 3rem;
     background-color: $accent;
     border-radius: 30rem 0 0 30rem;
@@ -41,6 +41,11 @@
         cursor: pointer;
     }
 
+
+    .iconRotate {
+        transform: rotate(180deg);
+        transition: $transition-03;
+    }
 }
 
 .switcher {
@@ -48,10 +53,10 @@
 
     position: relative;
     min-width: 3.6rem;
-    height: 2.4rem;
+    height: 2.5rem;
     background-color: $main;
     border-radius: 10rem;
-    margin: 0 2.2rem;
+    margin: 0 1.5rem;
     border: $border;
 
     &__slider {
@@ -62,6 +67,7 @@
         transform: translateX(.5rem);
         background: $accent;
         transition: $transition-015;
+        margin: 0rem 0 .1rem 0!important;
 
         &:hover {
             cursor: pointer;
